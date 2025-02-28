@@ -5,16 +5,15 @@
 
 //=========================================================
 // Registro do Service Worker
-// Se o navegador de internet suportar este recurso
+// se o navegador de internet suportar este recurso
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
         .register('/sw.js')
         .then(() => {
-            console.log("Service Worker registrado!")
+            console.log("Service worker registrado!")
         })
 }
-
-//=========================================================
+//===========================================
 
 
 // ALT + Z ativa quebra de linha automática

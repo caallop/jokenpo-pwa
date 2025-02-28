@@ -3,20 +3,6 @@
  * @author Guilherme Rosa, Vitor de Assis, Wellington R Cruz.
  */
 
-//=========================================================
-// Registro do Service Worker
-// Se o navegador de internet suportar este recurso
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('./sw.js')
-        .then(() => {
-            console.log("Service Worker registrado!")
-        })
-}
-
-//=========================================================
-
-
 // Instalação (cache "armazenamento local")
 self.addEventListener('install', (event) => {
     event.waitUntil(
