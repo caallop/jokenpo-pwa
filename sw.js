@@ -45,7 +45,7 @@ self.addEventListener('activate', (event) => {
 })
 
 
-// Interceptação (solicitações https e servindo em cache quanto off-line)
+// Interceptação (solicitações https servindo em cache quando off-line)
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
