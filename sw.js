@@ -8,7 +8,7 @@
 // Se o navegador de internet suportar este recurso
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('/sw.js')
+        .register('./sw.js')
         .then(() => {
             console.log("Service Worker registrado!")
         })
@@ -46,7 +46,6 @@ self.addEventListener('activate', (event) => {
 
 
 // Interceptação (solicitações https e servindo em cache quanto off-line)
-
 self.addEventListener('fetch', (event) => {
     event.respondWith(
         caches.match(event.request)
@@ -56,15 +55,6 @@ self.addEventListener('fetch', (event) => {
                 } else {
                     return fetch(event.request)
                 }
-            })
-    )
-})
-
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                return response || fetch(event.request)
             })
     )
 })
