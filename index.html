@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição que aparecerá nos buscadores">
+    <meta name="keywords" content="Palavras, chave, para, fins, de, pesquisa, e, anuncios, por, exemplo">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>JoKenPo</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Jokenpo</h1>
+        <h2>Escolha do jogador</h2>
+        <img src="img/pedra.png" alt="pedra">
+        <img src="img/papel.png" alt="papel">
+        <img src="img/tesoura.png" alt="tesoura">
+        <form>
+            <input type="radio" name="escolha" id="pedra">Pedra
+            <input type="radio" name="escolha" id="papel">Papel
+            <input type="radio" name="escolha" id="tesoura">Tesoura
+            <p>
+                <input type="button" class="bttns" value=" JOGAR " onclick="jogar()">
+                <input type="reset"  class="bttns" value=" RESET " onclick="limpar()">
+            </p>
+        </form>
+        <hr>
+        <h2>Escolha do computador</h2>
+        <img src="img/pc.png" alt="pc" id="pc">
+        <hr>
+        <h3 id="resultado"></h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

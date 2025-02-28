@@ -1,0 +1,19 @@
+{
+  "name": "jokenpo-pwa",
+  "version": "1.0.0",
+  "description": "site/aplicativo-pwa que simula um jogo de jokenpo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caallop/jokenpo-pwa.git"
+  },
+  "author": "Guilherme Rosa, Vitor de Assis, Wellington R Cruz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caallop/jokenpo-pwa/issues"
+  },
+  "homepage": "https://github.com/caallop/jokenpo-pwa#readme"
+}
