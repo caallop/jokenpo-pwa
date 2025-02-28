@@ -2,7 +2,7 @@
     "name" : "JoKenPo",
     "short_name" : "JoKenPo",
     "description" : "Aplicativo para jogar JoKenPo com possibilidade de jogar sem rede",
-    "start_url" : "/",
+    "start_url" : "./jokenpo-pwa",
     "scope" : "/",
     "display" : "standalone",
     "orientation" : "portrait-primary",
