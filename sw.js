@@ -37,7 +37,6 @@ self.addEventListener('install', (event) => {
             })
     )
 })
-
 // Ativação
 self.addEventListener('activate', (event) => {
     console.log("Ativando o service worker...", event)
